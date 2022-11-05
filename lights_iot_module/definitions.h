@@ -28,12 +28,12 @@ char id[40] = "000";
 #include <ArduinoJson.h>
 #include <WiFi.h>
 #include <WiFiClient.h>
-#include <AsyncMqttClient.h>
+#include <AsyncMqtt_Generic.h>
 #include <WiFiManager.h>
 #include <FS.h>
 #include <SPIFFS.h>
 
-#define MQTT_HOST IPAddress(0.0.0.0)
+#define MQTT_HOST IPAddress(0,0,0,0)
 #define MQTT_PORT 1883
 AsyncMqttClient mqttClient;
 TimerHandle_t mqttReconnectTimer;
