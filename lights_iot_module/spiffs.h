@@ -6,8 +6,8 @@ void saveConfigFile() {
   json["mqtt3"] = mqttTopic3;
   json["mqtt4"] = mqttTopic4;
   json["mqtt5"] = mqttTopic5;
-  json["ssid"] = wifiSsid;
-  json["password"] = wifiPassword;
+  json["ssid"] = ssidString;
+  json["password"] = pskString;
   
   File configFile = SPIFFS.open(CONFIG_FILE, "w");
   if (!configFile) {

@@ -3,6 +3,8 @@
 void wifiConnect() {
   
   Serial.print("Connecting to wifi");
+  Serial.println(wifiSsid);
+  Serial.println(wifiPassword);
   WiFi.begin(wifiSsid,wifiPassword);
   int t = 0;
   

@@ -1,3 +1,4 @@
+
 #include "definitions.h"
 
 void setup() {
@@ -8,6 +9,12 @@ void setup() {
   pinMode(LIGHT3, OUTPUT);
   pinMode(LIGHT4, OUTPUT);
   pinMode(LIGHT5, OUTPUT);
+
+  digitalWrite(LIGHT1,HIGH);
+  digitalWrite(LIGHT2,HIGH);
+  digitalWrite(LIGHT3,HIGH);
+  digitalWrite(LIGHT4,HIGH);
+  digitalWrite(LIGHT5,HIGH);
 
   pinMode(MQTTLIGHT, OUTPUT);
 

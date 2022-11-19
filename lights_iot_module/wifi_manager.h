@@ -42,11 +42,10 @@ void runWiFiManager() {
   addId(mqttTopic4);
   addId(mqttTopic5);
   
-   String str1 = wm.getWiFiPass(true);
-   String str2 = WiFi.SSID();
+   pskString = wm.getWiFiPass(true);
+   ssidString = WiFi.SSID();
  
-   str1.toCharArray(wifiPassword, sizeof(str1));
-   str2.toCharArray(wifiSsid, sizeof(str2));
+   
   
   //if you get here you have connected to the WiFi
   if (shouldSaveConfig) {
