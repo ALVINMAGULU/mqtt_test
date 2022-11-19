@@ -14,6 +14,9 @@ int timeout = 120;
 bool forceConfig = false;
 bool shouldResetBoard = false;
 
+String ssidString;
+String pskString;
+
 char wifiSsid[20] = "ssid#*";
 char wifiPassword[20] = "password";
 const long utcOffsetInSeconds = 10800;
